@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+    // Java ile kullanıcının girdiği değerler ile üslü sayı hesaplayan programı yazıyoruz.
+        int sayi,us;
+        int sonuc=1;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Taban=");
+        sayi= input.nextInt();
+
+        System.out.print("Üs=");
+        us=input.nextInt();
+
+        for (int i=1;i<=us;i++){
+            sonuc*=sayi;
+        }
+        System.out.println(sonuc);
+    }
+}
